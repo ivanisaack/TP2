@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
-  <sgraph:Statechart xmi:id="_me37AFepEeiXJJ0LdR8_qg" specification="interface:&#xA;&#xA;&#xA;in event eModo&#xA;in event eStartStop&#xA;in event ePuertaAbierta&#xA;in event ePuertaCerrada&#xA;&#xA;operation aEncenderLuz()&#xA;operation aApagarLuz()&#xA;operation aLed(cMODO:integer)&#xA;operation aEncenderHorno(cMODO:integer)&#xA;&#xA;const cHORNO: integer = 0&#xA;const cGRILL: integer = 1&#xA;const cAMBOS: integer = 2&#xA;const cAPAGADO: integer = 3&#xA;&#xA;var vModo: integer" name="prefix">
+  <sgraph:Statechart xmi:id="_me37AFepEeiXJJ0LdR8_qg" specification="interface:&#xA;&#xA;&#xA;in event eModo&#xA;in event eStartStop&#xA;in event ePuertaAbierta&#xA;in event ePuertaCerrada&#xA;&#xA;operation aEncenderLuz()&#xA;operation aApagarLuz()&#xA;operation aLed(cMODO:integer)&#xA;operation aEncenderHorno(vMODO:integer)&#xA;&#xA;const cHORNO: integer = 0&#xA;const cGRILL: integer = 1&#xA;const cAMBOS: integer = 2&#xA;const cAPAGADO: integer = 3&#xA;&#xA;var vModo: integer" name="prefix">
     <regions xmi:id="_me-oslepEeiXJJ0LdR8_qg" name="Modo de Funcionamiento">
       <vertices xsi:type="sgraph:Entry" xmi:id="_mfF9cVepEeiXJJ0LdR8_qg">
         <outgoingTransitions xmi:id="_hJa1UFvzEeiSTqTgQgIpVQ" specification="" target="_tluacFvyEeiSTqTgQgIpVQ"/>
@@ -23,7 +23,7 @@
         <outgoingTransitions xmi:id="_IsNYMFv2EeiSTqTgQgIpVQ" specification="eStartStop&#xA;" target="_T9R5QFv1EeiSTqTgQgIpVQ"/>
         <outgoingTransitions xmi:id="_7lvbwFv2EeiSTqTgQgIpVQ" specification="ePuertaAbierta&#xA;" target="_e4_1YFv0EeiSTqTgQgIpVQ"/>
       </vertices>
-      <vertices xsi:type="sgraph:State" xmi:id="_T9R5QFv1EeiSTqTgQgIpVQ" specification="entry / aEncenderHorno(vModo)&#xA;entry / aEncenderLuz()&#xA;exit / aEncenderHorno(cAPAGADO)" name="COCINANDO" incomingTransitions="_IsNYMFv2EeiSTqTgQgIpVQ">
+      <vertices xsi:type="sgraph:State" xmi:id="_T9R5QFv1EeiSTqTgQgIpVQ" specification="entry / aEncenderHorno(vModo)&#xA;entry / aEncenderLuz()&#xA;exit / aEncenderHorno(cAPAGADO)&#xA;exit / aApagarLuz()" name="COCINANDO" incomingTransitions="_IsNYMFv2EeiSTqTgQgIpVQ">
         <outgoingTransitions xmi:id="_ui20QFv2EeiSTqTgQgIpVQ" specification="eStartStop&#xA;&#x9;" target="_oQoTIFv0EeiSTqTgQgIpVQ"/>
         <outgoingTransitions xmi:id="_Az0DIFv3EeiSTqTgQgIpVQ" specification="ePuertaAbierta&#xA;" target="_e4_1YFv0EeiSTqTgQgIpVQ"/>
       </vertices>
