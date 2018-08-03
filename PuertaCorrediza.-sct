@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
-  <sgraph:Statechart xmi:id="_me37AFepEeiXJJ0LdR8_qg" specification="interface:&#xA;&#xA;&#xA;in event eAusencia&#xA;in event ePresencia&#xA;in event eAbierta&#xA;in event eCerrada&#xA;&#xA;operation aPuerta(cPUERTA:integer)&#xA;&#xA;const cABRIR: integer = 0&#xA;const cCERRAR: integer = 1&#xA;const cPARA: integer = 2&#xA;" name="prefix">
+  <sgraph:Statechart xmi:id="_me37AFepEeiXJJ0LdR8_qg" specification="interface:&#xA;&#xA;&#xA;in event eAusencia&#xA;in event ePresencia&#xA;in event eAbierta&#xA;in event eCerrada&#xA;&#xA;operation aPuerta(cPUERTA:integer)&#xA;&#xA;const cABRIR: integer = 0&#xA;const cCERRAR: integer = 1&#xA;const cPARAR: integer = 2&#xA;" name="prefix">
     <regions xmi:id="_me-oslepEeiXJJ0LdR8_qg" name="puerta corrediza">
       <vertices xsi:type="sgraph:Entry" xmi:id="_mfF9cVepEeiXJJ0LdR8_qg">
         <outgoingTransitions xmi:id="_mfQVgVepEeiXJJ0LdR8_qg" specification="&#xA;" target="_mfIZtFepEeiXJJ0LdR8_qg"/>
